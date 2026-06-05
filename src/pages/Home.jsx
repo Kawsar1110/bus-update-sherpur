@@ -173,7 +173,7 @@ export default function Home({ dbBuses }) {
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(290px, 1fr))',
-        gap: '16px', padding: '12px 16px 80px',
+        gap: '16px', padding: '12px 16px 120px',
       }}>
         {filtered.length === 0 ? (
           <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 16px', color: '#9ca3af' }}>
@@ -192,9 +192,9 @@ export default function Home({ dbBuses }) {
 {/* Footer */}
       <div style={{
         background: '#166534', color: '#86efac',
-        textAlign: 'center', padding: '16px',
-        fontSize: '13px', fontFamily: 'SolaimanLipi, Noto Sans Bengali, sans-serif',
-        lineHeight: '1.8'
+        textAlign: 'center', padding: '8px 16px',
+        fontSize: '11px', fontFamily: 'SolaimanLipi, Noto Sans Bengali, sans-serif',
+        lineHeight: '1.8', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 100
       }}>
         <p style={{ margin: '0 0 4px' }}>বাস ফ্যান অফ শেরপুর গ্রুপ থেকে উৎসাহিত হয়ে তৈরি</p>
         <p style={{ margin: 0, fontSize: '12px', opacity: 0.85 }}>
