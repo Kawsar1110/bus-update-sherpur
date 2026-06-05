@@ -12,7 +12,29 @@ export default function App() {
     if (data) setDbBuses(data)
   }
 
-  useEffect(() => { loadBuses() }, [])
+  useEffect(() => {
+    loadBuses()
+
+    // Track PWA install
+    window.addEventListener('appinstalled', () => {
+      if (window.gtag) {
+        window.gtag('event', 'pwa_installed', {
+          event_category: 'PWA',
+          event_label: 'App Installed',
+        })
+      }
+    })
+
+    // Track PWA install prompt shown
+    window.addEventListener('beforeinstallprompt', () => {
+      if (window.gtag) {
+        window.gtag('event', 'pwa_install_prompt', {
+          event_category: 'PWA',
+          event_label: 'Install Prompt Shown',
+        })
+      }
+    })
+  }, [])
 
   return (
     <BrowserRouter>
