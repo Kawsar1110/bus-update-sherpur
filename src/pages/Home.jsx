@@ -190,14 +190,23 @@ export default function Home({ dbBuses }) {
         )}
       </div>
 
-      {/* Footer */}
-      <div style={{
-        background: '#166534', color: '#86efac',
-        textAlign: 'center', padding: '14px',
-        fontSize: '12px', fontFamily: 'SolaimanLipi, Noto Sans Bengali, sans-serif',
-      }}>
-        বাস ফ্যান অফ শেরপুর গ্রুপ কর্তৃক প্রস্তুতকৃত
-      </div>
-    </div>
-  )
-}
+{/* Footer */}
+<div style={{
+  background: '#166534', color: '#86efac',
+  textAlign: 'center', padding: '16px',
+  fontSize: '13px', fontFamily: 'SolaimanLipi, Noto Sans Bengali, sans-serif',
+  lineHeight: '1.8'
+}}>
+  <p style={{ margin: '0 0 4px' }}>বাস ফ্যান অফ শেরপুর গ্রুপ কর্তৃক প্রস্তুতকৃত</p>
+  <p style={{ margin: 0, fontSize: '12px', opacity: 0.85 }}>
+    Developed by{' '}
+
+      href="https://www.facebook.com/kawsar1110/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: '#4ade80', fontWeight: '700', textDecoration: 'none' }}
+    >
+      Your Name
+    </a>
+  </p>
+</div>
