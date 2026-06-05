@@ -189,7 +189,6 @@ export default function Home({ dbBuses }) {
           filtered.map(bus => <BusCard key={bus.id} bus={bus} />)
         )}
       </div>
-
 {/* Footer */}
 <div style={{
   background: '#166534', color: '#86efac',
@@ -206,7 +205,7 @@ export default function Home({ dbBuses }) {
       rel="noopener noreferrer"
       style={{ color: '#4ade80', fontWeight: '700', textDecoration: 'none' }}
     >
-      Your Name
+      Kawsar Hasan
     </a>
   </p>
 </div>
